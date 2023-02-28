@@ -3,23 +3,26 @@ body {
 }
 
 #main-wrapper {
+    height: 70vh;
+    width: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
     margin: 0 auto;
 }
 
 @media screen and (max-width: 1024px) {
     #main-wrapper {
         display: flex;
+        height: fit-content;
         flex-direction: column;
         justify-content: space-between;
-        padding-bottom: 2em;
         margin: 0 auto;
     }
 
     .card {
-        margin: 1em;
+        margin-bottom: 1em;
     }
 
     .icon-container {
@@ -30,6 +33,7 @@ body {
 @media screen and (max-width: 480px) {
     #main-wrapper {
         display: flex;
+        height: fit-content;
         flex-direction: column;
         justify-content: space-around;
         margin: 0 auto;
@@ -59,8 +63,9 @@ body {
     background-color: #3DA9FC;
 }
 
-.icon-container:hover {
+.card:hover .icon-container {
     background-color: #FFFFFE;
+    color: #3DA9FC;
 }
 
 .icon-container {

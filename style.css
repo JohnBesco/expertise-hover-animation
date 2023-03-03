@@ -96,11 +96,19 @@ body {
     color: #5F6C7B;
 }
 
-.card span {
+.semi-circle {
     position: absolute;
     top: 0;
     left: 1;
     right: 0;
     bottom: auto;
+}
+
+.dot-grid {
+    position: absolute;
+    top: auto;
+    left: 0;
+    right: 1;
+    bottom: 0;
 }
 
